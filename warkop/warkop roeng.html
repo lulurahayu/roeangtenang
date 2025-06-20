@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warkop Roeang Tenang</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }body {
+  background-color: #f4f1ee;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #4b2e2e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.subjudul {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #6e4c4c;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  animation: fadeInDown 1.2s ease forwards;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #5c3b3b;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.content {
+  padding: 2rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card {
+  flex: 0 0 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  scroll-snap-align: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.section-padding {
+  padding: 4rem 2rem;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.maps-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+}
+
+.sosmed {
+  margin-top: 1rem;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.sosmed a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #4b2e2e;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header id="beranda">
+    <img src="https://via.placeholder.com/100x100.png?text=Logo" alt="Logo Warkop Roeang Tenang" class="logo">
+    <h1>Warkop Roeang Tenang</h1>
+    <p class="subjudul">the hidden waroeng kopi</p>
+  </header>  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#menu">Menu</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
+  </nav>  <section class="hero">
+    <h1>Selamat Datang</h1>
+    <p>Rasakan kenikmatan kopi terbaik dari biji pilihan nusantara.</p>
+  </section>  <section class="content" id="menu">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Espresso">
+      <h2>Espresso</h2>
+      <p>Kopi pekat dengan cita rasa kuat dan aroma khas.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Latte">
+      <h2>Latte</h2>
+      <p>Kombinasi lembut antara kopi dan susu yang creamy.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1582095133179-cb4a4d6b6f29?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kopi Tubruk">
+      <h2>Kopi Tubruk</h2>
+      <p>Kopi khas Indonesia dengan cara penyajian tradisional.</p>
+    </div>
+  </section>  <section id="tentang" class="section-padding">
+    <h2 style="text-align:center; margin-bottom: 1rem;">Tentang Kami</h2>
+    <p style="text-align:center; max-width: 600px; margin: auto;">Warkop Roeang Tenang adalah tempat berkumpulnya para pecinta kopi lokal. Kami menyajikan berbagai pilihan kopi asli Indonesia yang berkualitas tinggi dan diseduh dengan sepenuh hati.</p>
+  </section>  <section class="maps-container section-padding">
+    <h2 style="text-align:center; margin-bottom: 1rem;">Lokasi Kami</h2>
+    <iframe src="https://maps.app.goo.gl/WpSESUD7SGmpgvVK6" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>  <footer id="kontak">
+    <h2>Hubungi Kami</h2>
+    <p>Email: roeangtenang@example.com</p>
+    <p>Telepon: +62 812-3456-7890</p>
+    <div class="sosmed"> 
+      <a href="https://www.instagram.com/warkopruangtenang?igsh=MTJnejRjdG94eDNpZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@warkop.ruang.tena?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p style="margin-top: 1rem;">&copy; 2025 Warkop Roeang Tenang. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
